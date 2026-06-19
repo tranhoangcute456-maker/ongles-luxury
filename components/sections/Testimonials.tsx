@@ -71,7 +71,7 @@ export default function Testimonials() {
         <div className="relative min-h-[260px] flex items-center justify-center overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div key={idx}
-              className="text-center w-full max-w-2xl mx-auto cursor-grab active:cursor-grabbing touch-pan-y p-10 rounded-3xl"
+              className="text-center w-full max-w-2xl mx-auto cursor-grab active:cursor-grabbing touch-pan-y p-6 sm:p-10 rounded-3xl"
               style={{
                 background: "rgba(28,21,36,0.7)",
                 border: "1px solid rgba(232,93,138,0.12)",

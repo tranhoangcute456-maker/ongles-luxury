@@ -52,10 +52,10 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
 
         {/* Stats row */}
-        <motion.div className="grid grid-cols-3 gap-6 mb-24 max-w-2xl mx-auto"
+        <motion.div className="grid grid-cols-3 gap-3 sm:gap-6 mb-24 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
           {STATS.map((s, i) => (
-            <motion.div key={s.label} className="text-center p-6 rounded-2xl"
+            <motion.div key={s.label} className="text-center p-3 sm:p-6 rounded-xl sm:rounded-2xl"
               style={{
                 background: "rgba(28,21,36,0.6)",
                 border: "1px solid rgba(232,93,138,0.12)",

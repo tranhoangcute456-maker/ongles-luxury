@@ -205,7 +205,7 @@ export default function HeroSection() {
 
               {/* Supporting bottom-left circle */}
               <motion.div
-                className="absolute -bottom-8 -left-8 sm:-left-12 lg:-left-14 w-[44%] aspect-square rounded-full overflow-hidden"
+                className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:-left-12 lg:-left-14 w-[44%] aspect-square rounded-full overflow-hidden"
                 style={{
                   border: "6px solid #0D0A0F",
                   boxShadow: "0 20px 40px -10px rgba(0,0,0,0.6), 0 0 30px rgba(212,168,75,0.15)",
@@ -225,7 +225,7 @@ export default function HeroSection() {
               {/* Portrait top-right */}
               {portrait && (
                 <motion.div
-                  className="absolute -top-8 -right-6 sm:-right-10 lg:-right-12 w-[36%] aspect-[4/5] overflow-hidden"
+                  className="absolute -top-4 -right-3 sm:-top-8 sm:-right-10 lg:-right-12 w-[36%] aspect-[4/5] overflow-hidden"
                   style={{
                     borderRadius: "1.8rem",
                     border: "5px solid #0D0A0F",

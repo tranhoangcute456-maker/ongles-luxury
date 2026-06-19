@@ -105,10 +105,10 @@ export default function PortfolioGallery() {
         </motion.div>
 
         {/* Filter pills */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
+        <div className="flex overflow-x-auto gap-2 pb-3 mb-10 -mx-4 px-4 scrollbar-none md:flex-wrap md:justify-center md:overflow-visible md:mx-0 md:px-0">
           {CATEGORIES.map(c => (
             <button key={c.value} onClick={() => filter(c.value)}
-              className="px-5 py-2 rounded-full text-[12px] font-semibold tracking-wide transition-all duration-300"
+              className="px-5 py-2 rounded-full text-[12px] font-semibold tracking-wide transition-all duration-300 whitespace-nowrap"
               style={{
                 background: cat === c.value
                   ? "linear-gradient(135deg, #E85D8A, #C4436E)"
