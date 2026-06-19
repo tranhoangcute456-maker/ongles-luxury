@@ -135,11 +135,11 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
   };
 
   // ── Styles
-  const C: Record<string, React.CSSProperties> = {
-    card:  { background: "white", borderRadius: 16, padding: 28, marginBottom: 20, boxShadow: "0 2px 16px rgba(35,33,41,0.06)" },
-    label: { display: "block", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#A06A78", marginBottom: 7 },
-    input: { width: "100%", padding: "9px 13px", border: "1px solid #E6E1DB", borderRadius: 9, fontSize: "0.88rem", fontFamily: "inherit", outline: "none", background: "#FAF8F6", color: "#232129", boxSizing: "border-box" as const },
-    sel:   { padding: "8px 12px", border: "1px solid #E6E1DB", borderRadius: 9, fontSize: "0.85rem", fontFamily: "inherit", outline: "none", background: "#FAF8F6", color: "#232129" },
+  const C = {
+    card:  { background: "white", borderRadius: 16, padding: 28, marginBottom: 20, boxShadow: "0 2px 16px rgba(35,33,41,0.06)" } as React.CSSProperties,
+    label: { display: "block", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "1.5px", textTransform: "uppercase" as const, color: "#A06A78", marginBottom: 7 } as React.CSSProperties,
+    input: { width: "100%", padding: "9px 13px", border: "1px solid #E6E1DB", borderRadius: 9, fontSize: "0.88rem", fontFamily: "inherit", outline: "none", background: "#FAF8F6", color: "#232129", boxSizing: "border-box" as const } as React.CSSProperties,
+    sel:   { padding: "8px 12px", border: "1px solid #E6E1DB", borderRadius: 9, fontSize: "0.85rem", fontFamily: "inherit", outline: "none", background: "#FAF8F6", color: "#232129" } as React.CSSProperties,
     btn:   (bg: string, fg: string): React.CSSProperties => ({ display: "inline-flex", alignItems: "center", gap: 6, padding: "9px 20px", borderRadius: 999, background: bg, color: fg, border: "none", fontSize: "0.85rem", fontWeight: 500, cursor: "pointer", fontFamily: "inherit", transition: "opacity 0.15s" }),
   };
 
